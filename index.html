@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Snake</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Snake</h1>
+
+    <div class="hud">
+      <div class="stat">Score: <span id="score">0</span></div>
+      <div class="stat">Best: <span id="best">0</span></div>
+    </div>
+
+    <div class="board-wrap">
+      <canvas id="board" width="400" height="400"></canvas>
+      <div id="overlay" class="overlay">
+        <p id="overlay-text">Press Start or any arrow key to play</p>
+        <button id="start-btn">Start</button>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="pad" id="up" aria-label="up">&#8593;</button>
+      <div class="pad-row">
+        <button class="pad" id="left" aria-label="left">&#8592;</button>
+        <button class="pad" id="down" aria-label="down">&#8595;</button>
+        <button class="pad" id="right" aria-label="right">&#8594;</button>
+      </div>
+    </div>
+
+    <p class="hint">Use arrow keys / WASD, or the on-screen buttons. Eat the food, avoid walls and yourself.</p>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
